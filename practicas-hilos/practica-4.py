@@ -2,7 +2,7 @@
 # Primer prototipo funcional de asignacion de volumen automatica
 #
 
-import threading,time,soco
+import threading,time,soco,subprocess
 
 device = soco.discovery.any_soco()
 
@@ -32,8 +32,11 @@ def main():
 
     while volumen != 0:
 
+        subprocess.run('cls', shell=True)
+        
         print(f'\nVolumen actual [%{volumen}]')
         volumen = int(input('Ingrese volumen 0-100: '))
+
 
     stop = True
 
