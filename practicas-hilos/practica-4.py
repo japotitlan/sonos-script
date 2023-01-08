@@ -1,3 +1,7 @@
+#
+# Primer prototipo funcional de asignacion de volumen automatica
+#
+
 import threading,time,soco
 
 device = soco.discovery.any_soco()
@@ -16,7 +20,7 @@ def AjustarVolumen():
     while not stop:
         #print(volumen)
         device.volume = volumen
-        time.sleep(0.05)
+        time.sleep(0.01)
 
 
 def main():

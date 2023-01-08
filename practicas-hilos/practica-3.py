@@ -1,3 +1,7 @@
+#
+# Practica para simular asignacion de volumen automatica con threading
+#
+
 import threading,time
 
 global stop
@@ -16,7 +20,6 @@ def AjustarVolumen():
         print(volumen)
         time.sleep(1)
 
-
 def main():
     global volumen
     global stop
@@ -29,14 +32,5 @@ def main():
     time.sleep(5)
     stop = True
 
-
 if __name__ == '__main__':
     main()
-
-
-# for i in range(500):
-#     volumen = int(input())
-#     volumen_evento.set()
-
-#     hilo = threading.Thread(target=AjustarVolumen, args=(volumen,))
-#     hilo.start()

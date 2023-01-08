@@ -1,3 +1,7 @@
+#
+# Practica para comprender como funciona la libreria de threading
+#
+
 # importar librerias para poder manejar hilos y otra para poder detener procesos
 import threading,time
 

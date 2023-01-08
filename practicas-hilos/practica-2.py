@@ -1,3 +1,7 @@
+#
+# Practica para comprender el uso de eventos en threading
+#
+
 import threading,time
 
 pause_resume_event = threading.Event()
