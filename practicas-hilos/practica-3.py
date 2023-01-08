@@ -12,6 +12,7 @@ def AjustarVolumen():
     global volumen
 
     while not stop:
+        #device.volume = 25
         print(volumen)
         time.sleep(1)
 
